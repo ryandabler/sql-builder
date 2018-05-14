@@ -1,0 +1,57 @@
+:root {
+	--dd-width: 190px;
+	--dd-padding: 10px;
+	--dd-font-size: 13px;
+	--dd-bx-sh-offset: 2px;
+	--where-clause-border: 1px solid #E1E1E1;
+	--border-radius: 2px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 15px;
+	font-family: sans-serif;
+	background-color: #F9F9F9;
+	height: 100vh;
+}
+
+html, #root, .App {
+	height: 100%;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.none {
+	display: none;
+}
+
+.and, .search {
+    background-color: #04a0d4cc;
+    border: 1px solid #04a0d4cc;
+    padding: 10px 20px;
+	color: #FFFFFF;
+	border-radius: var(--border-radius);
+}
+
+.and:hover, .search:hover {
+	background-color: #04a0d4;
+    border: 1px solid #04a0d4;
+}
+
+.and {
+	width: 90px;
+}
+
+.search {
+	width: 200px;
+}

@@ -1,0 +1,17 @@
+.App {
+    position: relative;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CFD0D0;
+    color: #6C7071A9;
+}
+
+.search {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}

@@ -1,0 +1,10 @@
+.input {
+    border: var(--where-clause-border);
+    padding: var(--dd-padding);
+    width: var(--dd-width);
+    color: #6C7071;
+}
+
+.input.short {
+    width: calc(var(--dd-width) / 2);
+}

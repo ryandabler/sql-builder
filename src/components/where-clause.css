@@ -1,0 +1,19 @@
+.where-clause {
+    display: flex;
+}
+
+.where-clause:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.where-clause:last-of-type {
+    margin-bottom: 20px;
+}
+
+.where-clause > :not(:last-child) {
+    margin-right: 10px;
+}
+
+.where-clause * {
+    font-size: var(--dd-font-size);
+}

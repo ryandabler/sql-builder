@@ -1,0 +1,18 @@
+.text-holder {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--where-clause-border);
+    color: #6C7071;
+    background-color: #FFFFFF;
+    border-radius: var(--border-radius);
+}
+
+.text-holder.clickable:hover {
+    background-color: rgba(256, 256, 256, .25);
+}
+
+.text-holder.none {
+    display: none;
+}
