@@ -35,12 +35,14 @@ export function WhereClause(props) {
                       type={"condition"} />
             <Input text={props.query.values}
                    onInput={props.updateWhereClause("values")}
-                   classes={props.query.condition === "between" ? "short" : ""} />
+                   classes={props.query.condition === "between" ? "short" : ""}
+                   required={true} />
             <TextHolder text={"and"}
                         visible={props.query.condition === "between" ? "visible" : "none"} />
             <Input text={props.query.values2}
                    onInput={props.updateWhereClause("values2")}
-                   classes={props.query.condition === "between" ? "short" : "none"} />
+                   classes={props.query.condition === "between" ? "short" : "none"}
+                   required={props.query.condition === "between" ? true : false} />
         </div>
     );
 }

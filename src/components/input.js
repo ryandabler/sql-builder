@@ -8,12 +8,14 @@ export default function Input(props) {
         <input type="text"
                className={`input ${props.classes}`}
                onChange={(e) => props.onInput(e.target.value)}
-               value={props.text} />
+               value={props.text}
+               required={props.required} />
     );
 }
 
 Input.propTypes = {
     classes: PropTypes.string,
     onInput: PropTypes.func,
-    text: PropTypes.string
+    text: PropTypes.string,
+    required: PropTypes.bool
 };

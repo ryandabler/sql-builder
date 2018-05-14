@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { PropTypes } from "prop-types";
 
 import QueryContainer from "./components/query-container";
-import { sendQueryToServer } from "./actions";
 
 import "./App.css";
 
@@ -19,10 +18,7 @@ class App extends Component {
 				<header>
 					<h1>Search for Sessions</h1>
 				</header>
-				<div className="main-content">
-					<QueryContainer />
-				</div>
-				<button className="search clickable" onClick={() => this.props.sendQuery(this.props.queries)}>Search</button>
+				<QueryContainer />
 			</div>
 		);
 	}
@@ -37,11 +33,4 @@ const mapStateToProps = state => ({
 	queries: state.queries
 });
 
-const mapDispatchToProps = dispatch => ({
-	sendQuery: query => 
-		dispatch(sendQueryToServer(query))
-			.then(({sql}) => console.log(sql))
-			.catch(err => console.error(err))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps)(App);
